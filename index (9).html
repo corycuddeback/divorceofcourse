@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Divorce Of Course | Turn your I do into I don't</title>
+<meta name="description" content="Do-it-yourself divorce plans or full support from a licensed local attorney. Tell us your ZIP code and we'll connect you with the attorney who serves your area.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='36' fill='%23C2185B'/%3E%3Crect x='30' y='50' width='120' height='120' rx='20' fill='none' stroke='white' stroke-width='14'/%3E%3Cpath d='M56 110 L88 142 L176 34' fill='none' stroke='white' stroke-width='20' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@400;500;600;700&family=Pacifico&display=swap">
+<style>
+:root{
+  --hot:#C2185B; --hot-deep:#9E1249; --ring:#D0021B; --ink:#1A1A1A;
+  --paper:#FFFFFF; --blush:#FCEFF4; --muted:#5E5A5C; --line:#E6DDE1;
+  --display:'Archivo Black','Arial Black',Impact,sans-serif;
+  --script:'Pacifico','Brush Script MT',cursive;
+  --body:'Montserrat','Helvetica Neue',Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}
+a{color:var(--hot)}
+:focus-visible{outline:3px solid var(--ring);outline-offset:3px}
+
+/* ---------- HERO: the art card ---------- */
+.hero{display:flex;flex-direction:column;min-height:min(100svh,920px)}
+.hero-top{flex:1.1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(6px,1vw,14px);padding:clamp(40px,7vw,90px) 20px clamp(36px,5vw,70px);padding-top:calc(clamp(40px,7vw,90px) + env(safe-area-inset-top,0px));text-align:center}
+.line{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;column-gap:clamp(30px,3.6vw,60px);row-gap:4px;font-family:var(--display);text-transform:uppercase;line-height:1;margin:0}
+.line .w{font-size:clamp(38px,7.8vw,150px)}
+.ido{position:relative;display:inline-block;padding:0 .07em}
+.ido svg{position:absolute;left:-.24em;top:-.29em;width:calc(100% + .48em);height:calc(100% + .58em);overflow:visible}
+.idont{font-size:clamp(48px,9.9vw,190px)!important;color:var(--hot)}
+.hero-bottom{flex:1;background:var(--hot);display:flex;align-items:center;justify-content:center;padding:clamp(36px,5vw,70px) 20px}
+.logo{display:flex;align-items:center;gap:clamp(16px,2.6vw,50px);color:#fff}
+.logo svg{width:clamp(70px,10.4vw,200px);height:auto;flex:none}
+.logo .stack{display:flex;flex-direction:column;align-items:flex-start}
+.logo .divorce{font-family:var(--display);text-transform:uppercase;font-size:clamp(46px,8.85vw,170px);line-height:.95;letter-spacing:2px}
+.logo .oc-row{display:flex;align-items:baseline;gap:clamp(6px,.75vw,14px);margin-top:4px;flex-wrap:wrap}
+.logo .oc{font-family:var(--script);font-size:clamp(40px,8vw,155px);line-height:1.1}
+.logo .com{font-family:var(--body);font-weight:700;font-size:clamp(24px,5vw,96px);color:var(--hot);background:#fff;border-radius:999px;padding:.02em .36em}
+.hero-cta{display:inline-block;margin-top:clamp(18px,2vw,28px)}
+
+/* hero entrance (one orchestrated moment) */
+.anim .ido svg{opacity:0;transform:scale(1.5)}
+.anim.go .ido svg{animation:slam .45s cubic-bezier(.3,1.5,.5,1) .6s forwards}
+.anim .ido{display:inline-block}
+.anim.go .ido{animation:shake .4s 1.15s}
+.anim .idont{opacity:0;transform:scale(1.6) rotate(-6deg);display:inline-block}
+.anim.go .idont{animation:slam .5s cubic-bezier(.3,1.6,.5,1) 1.6s forwards}
+.anim .chk{stroke-dasharray:100;stroke-dashoffset:100}
+.anim.go .chk{animation:draw .45s ease-out 2.15s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes slam{to{opacity:1;transform:none}}
+@keyframes shake{0%,100%{transform:none}20%{transform:rotate(-5deg)}40%{transform:rotate(5deg)}60%{transform:rotate(-3deg)}80%{transform:rotate(2deg)}}
+@media (prefers-reduced-motion:reduce){
+  .anim .chk{stroke-dashoffset:0}
+  .anim .ido svg{opacity:1;transform:none}
+  .anim .idont{opacity:1;transform:none}
+  .anim.go *{animation:none!important}
+}
+
+/* ---------- buttons ---------- */
+.btn{font-family:var(--body);font-weight:700;font-size:18px;border:0;border-radius:999px;padding:16px 34px;cursor:pointer;text-decoration:none;display:inline-block;transition:transform .15s,background .15s}
+.btn-light{background:#fff;color:var(--hot)}
+.btn-light:hover{transform:translateY(-2px)}
+.btn-hot{background:var(--hot);color:#fff}
+.btn-hot:hover{background:var(--hot-deep)}
+.btn:disabled{opacity:.6;cursor:wait}
+
+/* ---------- content ---------- */
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+section{padding:clamp(64px,9vw,110px) 0}
+h2{font-family:var(--display);font-size:clamp(32px,4.6vw,54px);line-height:1.05;margin:0 0 20px;letter-spacing:-.5px}
+.lede{font-size:clamp(18px,1.9vw,21px);max-width:62ch;color:var(--ink);margin:0}
+.lede + .lede{margin-top:16px;color:var(--muted)}
+
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:44px}
+.plan{border:3px solid var(--ink);border-radius:22px;padding:32px 30px;position:relative;background:#fff}
+.plan.alt{background:var(--hot);border-color:var(--hot);color:#fff}
+.plan h3{font-family:var(--display);font-size:28px;line-height:1.1;margin:0 0 12px;display:flex;align-items:center;gap:14px}
+.plan h3 svg{width:40px;height:40px;flex:none}
+.plan p{margin:0 0 16px}
+.plan ul{margin:0;padding-left:20px}
+.plan li{margin:6px 0}
+
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;margin-top:40px;counter-reset:s}
+.step{counter-increment:s}
+.step::before{content:counter(s);font-family:var(--display);font-size:56px;line-height:1;color:var(--hot);display:block;margin-bottom:8px}
+.step h3{font-size:20px;margin:0 0 6px;font-weight:700}
+.step p{margin:0;color:var(--muted)}
+
+/* ---------- form ---------- */
+.form-sec{background:var(--blush)}
+.form-grid{display:grid;grid-template-columns:1fr 1.35fr;gap:clamp(30px,5vw,70px);align-items:start}
+.form-intro p{color:var(--muted);margin:0 0 14px;max-width:44ch}
+.zipnote{border-left:5px solid var(--hot);padding:6px 0 6px 16px;margin-top:22px;color:var(--ink)!important;font-weight:500}
+form{background:#fff;border-radius:24px;padding:clamp(24px,3.4vw,40px);box-shadow:0 18px 50px -24px rgba(158,18,73,.35)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{margin-bottom:20px}
+label,.legend{display:block;font-weight:600;font-size:15px;margin-bottom:7px}
+.opt{font-weight:500;color:var(--muted);font-size:13px}
+input[type=text],input[type=email],input[type=tel],select,textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:#fff;border:2px solid var(--line);border-radius:12px;padding:13px 14px;transition:border-color .15s}
+input:focus,select:focus,textarea:focus{border-color:var(--hot);outline:none;box-shadow:0 0 0 3px rgba(194,24,91,.18)}
+textarea{min-height:130px;resize:vertical}
+.zip-input{font-family:var(--display)!important;font-size:28px!important;letter-spacing:6px;max-width:220px}
+.zip-status{font-size:14px;margin-top:8px;min-height:1.4em;color:var(--muted)}
+.zip-status.ok{color:#1B7F3B;font-weight:600}
+fieldset{border:0;padding:0;margin:0 0 20px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:inline-block;border:2px solid var(--line);border-radius:999px;padding:9px 18px;font-size:15px;font-weight:600;cursor:pointer;transition:all .15s;background:#fff}
+.chip input:checked + span{background:var(--hot);border-color:var(--hot);color:#fff}
+.chip input:focus-visible + span{outline:3px solid var(--ring);outline-offset:2px}
+.consent{font-weight:500;display:flex;gap:12px;align-items:flex-start;font-size:14px;color:var(--muted);margin:6px 0 22px}
+.consent input{width:22px;height:22px;flex:none;margin-top:2px;accent-color:var(--hot)}
+.err{color:var(--ring);font-size:14px;font-weight:600;margin-top:6px;display:none}
+.field.bad .err,fieldset.bad .err{display:block}
+.field.bad input{border-color:var(--ring)}
+.form-msg{font-size:15px;margin-top:14px;color:var(--ring);font-weight:600}
+.thanks{display:none;text-align:center;padding:30px 10px}
+.thanks svg{width:90px;height:90px}
+.thanks h3{font-family:var(--display);font-size:32px;margin:14px 0 10px}
+.thanks p{color:var(--muted);max-width:42ch;margin:0 auto}
+.hp{position:absolute;left:-9999px}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#CFC8CB;padding:50px 0 calc(50px + env(safe-area-inset-bottom,0px));font-size:13px;line-height:1.7}
+footer .flogo{font-family:var(--display);color:#fff;font-size:22px;text-transform:uppercase}
+footer .flogo span{font-family:var(--script);text-transform:none;color:#F48FB1;font-size:22px}
+footer p{max-width:90ch}
+
+@media (max-width:820px){
+  .form-grid{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr;gap:0}
+}
+</style>
+</head>
+<body>
+
+<!-- ======================= HERO / ART CARD ======================= -->
+<header class="hero anim" id="hero">
+  <div class="hero-top">
+    <h1 style="margin:0">
+      <span class="line"><span class="w">Turn your</span>
+        <span class="w ido">I do
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <ellipse cx="50" cy="50" rx="49" ry="48" fill="none" stroke="#D0021B" stroke-width="10" vector-effect="non-scaling-stroke"/>
+            <line x1="16" y1="16" x2="84" y2="84" stroke="#D0021B" stroke-width="6" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+          </svg>
+        </span>
+      </span>
+      <span class="line" style="margin-top:clamp(6px,1vw,14px)"><span class="w">into an</span><span class="w idont">I don’t</span></span>
+    </h1>
+  </div>
+  <div class="hero-bottom">
+    <div style="display:flex;flex-direction:column;align-items:center">
+      <div class="logo" role="img" aria-label="Divorce of course dot com">
+        <svg viewBox="0 0 200 200" aria-hidden="true">
+          <rect x="14" y="40" width="140" height="140" rx="22" fill="none" stroke="#fff" stroke-width="14"/>
+          <path class="chk" pathLength="100" d="M44 108 L82 146 L186 22" fill="none" stroke="#fff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="stack">
+          <span class="divorce">Divorce</span>
+          <span class="oc-row"><span class="oc">of course</span><span class="com">.com</span></span>
+        </div>
+      </div>
+      <a href="#start" class="btn btn-light hero-cta">Get started</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ======================= ABOUT ======================= -->
+<section id="about">
+  <div class="wrap">
+    <h2>Divorce doesn’t have to be a war.</h2>
+    <p class="lede">divorceofcourse.com connects you with a licensed divorce attorney in your area. Whether your split is friendly and simple or complicated and contested, you pick the level of help you need, and you only pay for that.</p>
+    <p class="lede">Every market is served by one local law firm that knows your state’s courts, forms, and judges. Tell us your ZIP code and your situation goes straight to them.</p>
+
+    <div class="plans">
+      <div class="plan">
+        <h3>
+          <svg viewBox="0 0 200 200" aria-hidden="true"><rect x="14" y="40" width="140" height="140" rx="22" fill="none" stroke="#C2185B" stroke-width="16"/><path d="M44 108 L82 146 L186 22" fill="none" stroke="#C2185B" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Do-it-yourself plan
+        </h3>
+        <p>For couples who agree on the big things and want to keep costs down.</p>
+        <ul>
+          <li>Attorney-prepared forms for your state</li>
+          <li>Step-by-step filing guidance</li>
+          <li>Move at your own pace</li>
+          <li>Upgrade to full support anytime</li>
+        </ul>
+      </div>
+      <div class="plan alt">
+        <h3>
+          <svg viewBox="0 0 200 200" aria-hidden="true"><rect x="14" y="40" width="140" height="140" rx="22" fill="none" stroke="#fff" stroke-width="16"/><path d="M44 108 L82 146 L186 22" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Full attorney support
+        </h3>
+        <p>For anything involving kids, property, support, or a spouse who won’t cooperate.</p>
+        <ul>
+          <li>A licensed local attorney on your side</li>
+          <li>Custody, support, and property division</li>
+          <li>Negotiation and court representation</li>
+          <li>From first filing to final decree</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step"><h3>Tell us about it</h3><p>Fill out the short form below. First name only is fine.</p></div>
+      <div class="step"><h3>We route it locally</h3><p>Your ZIP code sends your information to the attorney who serves your area.</p></div>
+      <div class="step"><h3>They reach out</h3><p>Expect a call, text, or email at the time you choose. No obligation.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FORM ======================= -->
+<section class="form-sec" id="start">
+  <div class="wrap form-grid">
+    <div class="form-intro">
+      <h2>Let’s talk about your situation.</h2>
+      <p>It takes about two minutes. Everything you share is confidential and only goes to the attorney who serves your area.</p>
+      <p>You don’t need to give your full name or your address.</p>
+      <p class="zipnote">Your ZIP code is the one thing we have to have. It’s how we find your local attorney.</p>
+    </div>
+
+    <div>
+    <form id="leadForm" novalidate>
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div class="field" id="f-zip">
+        <label for="zip">Your ZIP code</label>
+        <input class="zip-input" type="text" id="zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="00000" required>
+        <div class="zip-status" id="zipStatus" aria-live="polite"></div>
+        <div class="err">Enter a 5-digit ZIP code.</div>
+      </div>
+
+      <div class="row">
+        <div class="field" id="f-first">
+          <label for="first">First name</label>
+          <input type="text" id="first" name="first_name" autocomplete="given-name" required>
+          <div class="err">Tell us what to call you.</div>
+        </div>
+        <div class="field">
+          <label for="last">Last name <span class="opt">(optional)</span></label>
+          <input type="text" id="last" name="last_name" autocomplete="family-name">
+        </div>
+      </div>
+
+      <fieldset id="f-method">
+        <span class="legend">How should we reach you?</span>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="contact_method" value="Email" checked><span>Email</span></label>
+          <label class="chip"><input type="radio" name="contact_method" value="Text"><span>Text</span></label>
+          <label class="chip"><input type="radio" name="contact_method" value="Phone call"><span>Phone call</span></label>
+        </div>
+      </fieldset>
+
+      <div class="row">
+        <div class="field" id="f-email">
+          <label for="email">Email <span class="opt" id="emailOpt">(needed for email)</span></label>
+          <input type="email" id="email" name="email" autocomplete="email">
+          <div class="err" id="emailErr">Enter a valid email address.</div>
+        </div>
+        <div class="field" id="f-phone">
+          <label for="phone">Phone <span class="opt" id="phoneOpt">(optional)</span></label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel">
+          <div class="err">Enter a phone number with area code.</div>
+        </div>
+      </div>
+
+      <fieldset>
+        <span class="legend">Best time to reach you</span>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="best_time" value="Morning" checked><span>Morning</span></label>
+          <label class="chip"><input type="radio" name="best_time" value="Afternoon"><span>Afternoon</span></label>
+          <label class="chip"><input type="radio" name="best_time" value="Evening"><span>Evening</span></label>
+          <label class="chip"><input type="radio" name="best_time" value="Anytime"><span>Anytime</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <span class="legend">Which kind of help are you looking for?</span>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="plan" value="Do-it-yourself plan"><span>Do-it-yourself</span></label>
+          <label class="chip"><input type="radio" name="plan" value="Full attorney support"><span>Full attorney support</span></label>
+          <label class="chip"><input type="radio" name="plan" value="Not sure yet" checked><span>Not sure yet</span></label>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="situation">Describe your situation <span class="opt">(optional, but it helps)</span></label>
+        <textarea id="situation" name="situation" placeholder="For example: married 8 years, two kids, we mostly agree but need help splitting the house."></textarea>
+      </div>
+
+      <label class="consent">
+        <input type="checkbox" id="consent" name="consent" value="yes" required>
+        <span>I agree to be contacted by a participating attorney about my request. Submitting this form does not create an attorney-client relationship.</span>
+      </label>
+      <div class="err" id="consentErr" style="margin:-14px 0 16px">Please check the box so the attorney can contact you.</div>
+
+      <button type="submit" class="btn btn-hot" id="submitBtn" style="width:100%">Send to my local attorney</button>
+      <div class="form-msg" id="formMsg" role="alert"></div>
+    </form>
+
+    <div class="thanks" id="thanks" aria-live="polite">
+      <svg viewBox="0 0 200 200" aria-hidden="true"><rect x="14" y="40" width="140" height="140" rx="22" fill="none" stroke="#C2185B" stroke-width="14"/><path d="M44 108 L82 146 L186 22" fill="none" stroke="#C2185B" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <h3 id="thanksTitle">Sent.</h3>
+      <p id="thanksText"></p>
+    </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="flogo">Divorce <span>of course</span>.com</div>
+    <p>Attorney advertising. divorceofcourse.com is a marketing brand licensed to independent law firms, each serving its own market. Information on this site is general and is not legal advice. Submitting a request does not create an attorney-client relationship. Past results do not guarantee future outcomes.</p>
+    <p>© <span id="yr"></span> divorceofcourse.com</p>
+  </div>
+</footer>
+
+<script>
+/* =====================================================================
+   ZIP CODE ROUTING
+   Each licensed firm gets an entry. "zips" are 3-digit ZIP prefixes
+   (the first 3 digits). Add exact 5-digit ZIPs under "exact" for
+   borders between markets. Exact matches win over prefixes.
+   ===================================================================== */
+const FIRMS = [
+  // EXAMPLE — replace with the real licensee when one signs on.
+  { market: "Boise, ID", firm: "Example Law Firm (Boise)", email: "cory@usaconnectedtv.com",
+    zips: ["836","837"], exact: [] },
+];
+// Leads from ZIPs no firm has claimed yet go here.
+const DEFAULT_ROUTE = { market: "Unassigned market", firm: "Divorce Of Course (unassigned)", email: "cory@usaconnectedtv.com" };
+
+function routeFor(zip){
+  for (const f of FIRMS) if (f.exact && f.exact.includes(zip)) return f;
+  const p = zip.slice(0,3);
+  for (const f of FIRMS) if (f.zips.includes(p)) return f;
+  return null;
+}
+
+/* ===================================================================== */
+const $ = id => document.getElementById(id);
+$('yr').textContent = new Date().getFullYear();
+requestAnimationFrame(()=>setTimeout(()=>$('hero').classList.add('go'),150));
+
+const zip = $('zip');
+zip.addEventListener('input',()=>{
+  zip.value = zip.value.replace(/\D/g,'').slice(0,5);
+  const st = $('zipStatus');
+  $('f-zip').classList.remove('bad');
+  if (zip.value.length === 5){
+    st.className='zip-status ok';
+    st.textContent = routeFor(zip.value) ? '✓ Great, there’s an attorney serving your area.' : '✓ Got it. We’ll find the right attorney for your area.';
+  } else { st.className='zip-status'; st.textContent=''; }
+});
+
+function method(){ return document.querySelector('input[name=contact_method]:checked').value; }
+function updateRequired(){
+  const m = method();
+  $('emailOpt').textContent = m==='Email' ? '(needed for email)' : '(optional)';
+  $('phoneOpt').textContent = m==='Email' ? '(optional)' : '(needed for ' + m.toLowerCase() + ')';
+}
+document.querySelectorAll('input[name=contact_method]').forEach(r=>r.addEventListener('change',updateRequired));
+
+function validate(){
+  let ok = true;
+  const set = (id,bad)=>{ $(id).classList.toggle('bad',bad); if(bad) ok=false; };
+  set('f-zip', !/^\d{5}$/.test(zip.value));
+  set('f-first', !$('first').value.trim());
+  const m = method();
+  const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($('email').value.trim());
+  const phoneOk = $('phone').value.replace(/\D/g,'').length >= 10;
+  set('f-email', m==='Email' ? !emailOk : ($('email').value.trim() && !emailOk));
+  set('f-phone', m!=='Email' ? !phoneOk : ($('phone').value.trim() && !phoneOk));
+  const c = $('consent').checked; $('consentErr').style.display = c ? 'none':'block'; if(!c) ok=false;
+  if(!ok){ const first = document.querySelector('.bad input, .bad'); if(first){ (first.querySelector?.('input')||first).focus?.(); } }
+  return ok;
+}
+
+$('leadForm').addEventListener('submit', async e=>{
+  e.preventDefault();
+  $('formMsg').textContent='';
+  if(!validate()) return;
+  const fd = new FormData(e.target);
+  const z = zip.value;
+  const route = routeFor(z) || DEFAULT_ROUTE;
+  const data = Object.fromEntries(fd.entries());
+  delete data._honey;
+  Object.assign(data, {
+    routed_market: route.market,
+    routed_firm: route.firm,
+    _subject: `New divorce inquiry — ${data.first_name} (${z}, ${route.market})`,
+    _template: 'table',
+    _captcha: 'false'
+  });
+  if (fd.get('_honey')) return; // bot
+  const btn = $('submitBtn'); btn.disabled = true; btn.textContent = 'Sending…';
+  try{
+    // Sends to the firm's email via FormSubmit (each address must confirm once).
+    const r = await fetch('https://formsubmit.co/ajax/' + encodeURIComponent(route.email), {
+      method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body: JSON.stringify(data)
+    });
+    if(!r.ok) throw new Error('bad');
+    showThanks(data);
+  }catch(err){
+    btn.disabled=false; btn.textContent='Send to my local attorney';
+    $('formMsg').textContent = 'Your request didn’t go through. Check your connection and try again.';
+  }
+});
+
+function showThanks(d){
+  $('leadForm').style.display='none';
+  $('thanks').style.display='block';
+  $('thanksTitle').textContent = `Thanks, ${d.first_name}.`;
+  const how = d.contact_method==='Email' ? 'by email' : d.contact_method==='Text' ? 'by text' : 'by phone';
+  const when = d.best_time==='Anytime' ? '' : ` in the ${d.best_time.toLowerCase()}`;
+  $('thanksText').textContent = `Your information went to the attorney serving ${d.zip}. Expect to hear from them ${how}${when}, usually within one business day.`;
+  $('thanks').scrollIntoView({behavior:'smooth',block:'center'});
+}
+</script>
+</body>
+</html>
